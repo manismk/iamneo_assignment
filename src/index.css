@@ -30,3 +30,64 @@ code {
 .main {
   margin-left: 3rem;
 }
+
+.main--container {
+  padding: 0.8rem 1.2rem;
+  overflow: auto;
+}
+
+.top--actions {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+
+.top--actions > div {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.action {
+  display: flex;
+  align-items: center;
+}
+
+.action span {
+  font-weight: 600;
+}
+
+.action svg {
+  font-size: 1.1rem;
+}
+
+.task--container {
+  display: flex;
+  gap: 2rem;
+}
+.task--wrapper {
+  background-color: var(--light--2);
+  width: 15rem;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.task--Name {
+  background-color: var(--light--1);
+  font-weight: 700;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+}
+
+.candidate--container {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.candidate--card {
+  background-color: var(--light--1);
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+}
