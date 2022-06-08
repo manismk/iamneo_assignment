@@ -1,0 +1,35 @@
+.second--top--bar {
+  background-color: var(--light--2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.4rem 1.2rem;
+}
+
+.second--top--bar div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.second--top--bar .left {
+  gap: 0.2rem;
+}
+
+.second--top--bar button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn--secondary {
+  background-color: var(--light--1);
+  padding: 0.2rem 0.5rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn--secondary svg,
+.btn--primary svg {
+  font-size: 1.2rem;
+}

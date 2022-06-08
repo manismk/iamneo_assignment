@@ -1,3 +1,4 @@
+import { SecondTopBar } from "./components/secondary-topbar/SecondTopBar";
 import { SideBar } from "./components/sidebar/SideBar";
 import { TopBar } from "./components/topbar/TopBar";
 
@@ -8,6 +9,7 @@ const App = () => {
 
       <div className="main">
         <TopBar />
+        <SecondTopBar />
         Helllo
       </div>
     </div>
