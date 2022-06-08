@@ -1,0 +1,48 @@
+.top--bar {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--light--1);
+  padding: 0.8rem 1.2rem;
+  align-items: center;
+}
+
+.top--bar div {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.top--bar .company--name {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.primary--icon {
+  background-color: var(--primary--color);
+  color: var(--light--1);
+  padding: 0.25rem;
+  border-radius: 50%;
+  border-top-right-radius: 5px;
+}
+
+.top--bar .search {
+  border: none;
+  padding: 0.2rem;
+  border-bottom: 1px solid;
+}
+
+.btn--primary {
+  background-color: var(--dark--color);
+  color: var(--light--1);
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+}
+
+.profile--btn {
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--primary--color);
+  color: var(--light--1);
+  border-radius: 50%;
+  border: none;
+}
