@@ -64,6 +64,8 @@ code {
 .task--container {
   display: flex;
   gap: 2rem;
+  margin-top: 2rem;
+  align-items: flex-start;
 }
 .task--wrapper {
   background-color: var(--light--2);
