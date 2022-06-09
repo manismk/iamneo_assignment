@@ -13,17 +13,17 @@ export const candidateDetails = [
       {
         id: uuid(),
         Name: "Ajay",
-        from: "Cognizant",
+        from: "TCS",
       },
       {
         id: uuid(),
         Name: "Pranesh",
-        from: "Cognizant",
+        from: "Kongu Engineering college",
       },
       {
         id: uuid(),
         Name: "Barath",
-        from: "Cognizant",
+        from: "Infosys",
       },
     ],
   },
@@ -34,7 +34,7 @@ export const candidateDetails = [
       {
         id: uuid(),
         Name: "Krishna",
-        from: "Cognizant",
+        from: "Tech Mahindra",
       },
       {
         id: uuid(),
@@ -44,12 +44,12 @@ export const candidateDetails = [
       {
         id: uuid(),
         Name: "Mohan",
-        from: "Cognizant",
+        from: "Infosys",
       },
       {
         id: uuid(),
         Name: "Guru",
-        from: "Cognizant",
+        from: "KCIT",
       },
     ],
   },
@@ -59,23 +59,18 @@ export const candidateDetails = [
     candidates: [
       {
         id: uuid(),
-        Name: "Mani kandan",
-        from: "Cognizant",
+        Name: "Kumar",
+        from: "BITS",
       },
       {
         id: uuid(),
-        Name: "Ajay",
-        from: "Cognizant",
+        Name: "Brila",
+        from: "TCS",
       },
       {
         id: uuid(),
-        Name: "Pranesh",
-        from: "Cognizant",
-      },
-      {
-        id: uuid(),
-        Name: "Barath",
-        from: "Cognizant",
+        Name: "Tanny",
+        from: "LPU",
       },
     ],
   },
@@ -85,23 +80,8 @@ export const candidateDetails = [
     candidates: [
       {
         id: uuid(),
-        Name: "Krishna",
-        from: "Cognizant",
-      },
-      {
-        id: uuid(),
-        Name: "Keerthana",
-        from: "Cognizant",
-      },
-      {
-        id: uuid(),
-        Name: "Mohan",
-        from: "Cognizant",
-      },
-      {
-        id: uuid(),
-        Name: "Guru",
-        from: "Cognizant",
+        Name: "Swapnil",
+        from: "CEG",
       },
     ],
   },
@@ -111,13 +91,13 @@ export const candidateDetails = [
     candidates: [
       {
         id: uuid(),
-        Name: "Mani kandan",
-        from: "Cognizant",
+        Name: "Kalam",
+        from: "MIT",
       },
       {
         id: uuid(),
-        Name: "Ajay",
-        from: "Cognizant",
+        Name: "Suman",
+        from: "GIT",
       },
     ],
   },
