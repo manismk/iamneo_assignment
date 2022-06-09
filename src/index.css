@@ -66,10 +66,12 @@ code {
   gap: 2rem;
   margin-top: 2rem;
   align-items: flex-start;
+  overflow-x: auto;
 }
 .task--wrapper {
   background-color: var(--light--2);
   width: 15rem;
+  min-width: 12rem;
   padding: 1rem;
   border-radius: 5px;
 }
@@ -79,6 +81,7 @@ code {
   font-weight: 700;
   padding: 0.4rem 0.8rem;
   border-radius: 5px;
+  border-left: 3px solid red;
 }
 
 .candidate--container {
@@ -92,4 +95,13 @@ code {
   background-color: var(--light--1);
   padding: 0.4rem 0.8rem;
   border-radius: 5px;
+}
+
+.candidate--name {
+  font-weight: 600;
+}
+
+.candidate--from {
+  font-size: 0.85rem;
+  color: #aaa;
 }
