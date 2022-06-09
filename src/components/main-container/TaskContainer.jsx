@@ -1,19 +1,28 @@
 import { useState } from "react";
+import { Droppable } from "react-beautiful-dnd";
 import { DragDropContext } from "react-beautiful-dnd";
 import { candidateDetails } from "../../data";
 import { TaskWrapper } from "./TaskWrapper";
 
 export const TaskContainer = () => {
   const [candidateData, setCandidateData] = useState(candidateDetails);
-  const handleDragEnd = ({ destination, source, draggableId }) => {
-    // console.log(destination, source, draggableId);
+  const handleDragEnd = ({ destination, source, draggableId, type }) => {
     if (!destination) return;
     if (
       destination.droppableId === source.droppableId &&
       destination.index === source.index
     )
       return;
+    if (type === "task") {
+      const sourceObj = candidateData.find((task) => task.id === draggableId);
+      const newTaskData = [...candidateData];
 
+      newTaskData.splice(source.index, 1);
+
+      newTaskData.splice(destination.index, 0, sourceObj);
+      setCandidateData(newTaskData);
+      return;
+    }
     const startObj = candidateData.find(
       (task) => task.id === source.droppableId
     );
@@ -58,11 +67,24 @@ export const TaskContainer = () => {
   };
   return (
     <DragDropContext onDragEnd={handleDragEnd}>
-      <div className="task--container">
-        {candidateData.map((task) => (
-          <TaskWrapper task={task} key={task.id} />
-        ))}
-      </div>
+      <Droppable
+        droppableId="task--container"
+        direction="horizontal"
+        type="task"
+      >
+        {(provided) => (
+          <div
+            className="task--container"
+            {...provided.droppableProps}
+            ref={provided.innerRef}
+          >
+            {candidateData.map((task, index) => (
+              <TaskWrapper task={task} key={task.id} index={index} />
+            ))}
+            {provided.placeholder}
+          </div>
+        )}
+      </Droppable>
     </DragDropContext>
   );
 };
