@@ -1,11 +1,11 @@
-import { useState } from "react";
 import { Droppable } from "react-beautiful-dnd";
 import { DragDropContext } from "react-beautiful-dnd";
-import { candidateDetails } from "../../data";
+import { useData } from "../../context/data-context";
 import { TaskWrapper } from "./TaskWrapper";
 
 export const TaskContainer = () => {
-  const [candidateData, setCandidateData] = useState(candidateDetails);
+  const { candidateData, setCandidateData } = useData();
+
   const handleDragEnd = ({ destination, source, draggableId, type }) => {
     if (!destination) return;
     if (
