@@ -12,7 +12,7 @@ export const TaskWrapper = ({ task, index }) => {
           ref={provided.innerRef}
         >
           <p className="task--Name" {...provided.dragHandleProps}>
-            {task.type}
+            {task.type} {`(${task.candidates.length})`}
           </p>
           <Droppable droppableId={task.id} type="candidate">
             {(provided) => (

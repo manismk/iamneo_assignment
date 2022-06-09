@@ -71,6 +71,7 @@ export const TaskContainer = () => {
         droppableId="task--container"
         direction="horizontal"
         type="task"
+        style={{ overflow: "auto" }}
       >
         {(provided) => (
           <div
